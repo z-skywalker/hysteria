@@ -23,7 +23,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: "1.24"
+          go-version: "1.25"
 
       - name: Setup Python # This is for the build script
         uses: actions/setup-python@v5
@@ -33,7 +33,7 @@ jobs:
       - uses: nttld/setup-ndk@v1
         id: setup-ndk
         with:
-          ndk-version: r26b
+          ndk-version: r29
           add-to-path: false
 
       - name: Run build script
